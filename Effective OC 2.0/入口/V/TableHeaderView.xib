@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hj-il-KlV">
+                    <rect key="frame" x="10" y="39" width="307" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUQ-W4-QrG">
+                    <rect key="frame" x="332" y="21" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="PUQ-W4-QrG" secondAttribute="height" multiplier="1:1" id="WSj-EB-MiL"/>
+                        <constraint firstAttribute="width" constant="60" id="mmp-pq-2iW"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="showMore:" destination="iN0-l3-epB" eventType="touchUpInside" id="S8Q-gc-gU2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7Hj-il-KlV" firstAttribute="centerY" secondItem="PUQ-W4-QrG" secondAttribute="centerY" id="8Ji-TL-qbt"/>
+                <constraint firstItem="PUQ-W4-QrG" firstAttribute="leading" secondItem="7Hj-il-KlV" secondAttribute="trailing" constant="15" id="E0r-d8-2yZ"/>
+                <constraint firstItem="7Hj-il-KlV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="RQR-Pi-Obm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PUQ-W4-QrG" secondAttribute="trailing" constant="10" id="ZZQ-FA-0ri"/>
+                <constraint firstItem="PUQ-W4-QrG" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="h9V-Lj-Uh1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="titleLab" destination="7Hj-il-KlV" id="UuD-D4-Gn3"/>
+            </connections>
+            <point key="canvasLocation" x="81" y="-59"/>
+        </view>
+    </objects>
+</document>
